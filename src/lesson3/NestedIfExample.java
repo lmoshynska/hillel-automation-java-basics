@@ -17,5 +17,55 @@ public class NestedIfExample {
                 }
             }
         }
+
+        // How can we simplify and get the same result?
+
+        /*You have 3 numbers, calculate, which is the greatest
+        Print result into console*/
+//        System.out.println("Input first number and press ENTER:");
+//        int first = input.nextInt();
+//        System.out.println("Input second number and press ENTER:");
+//        int second = input.nextInt();
+//        System.out.println("Input third number and press ENTER:");
+//        int third = input.nextInt();
+//
+//        if (first > second) {
+//            if (first > third) {
+//                System.out.println("first: " + first);
+//            }
+//        }
+//        if (second > first) {
+//            if (second > third) {
+//                System.out.println("second: " + second);
+//            }
+//        }
+//        if (third > first) {
+//            if (third > second) {
+//                System.out.println("third: " + third);
+//            }
+//        }
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        if (first > second && first > third) {
+//            System.out.println("first: " + first);
+//        } else if (second > first && second > third) {
+//            System.out.println("second: " + second);
+//        } else {
+//            System.out.println("third: " + third);
+//        }

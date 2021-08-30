@@ -22,11 +22,11 @@ public class NestedForLoopExample {
 
         // outer loop prints weeks
         for (int i = 1; i <= weeks; i++) {
-            System.out.println("Week: " + i);
+            System.out.print("Week: " + i);
 
             // inner loop prints days
             for (int j = 1; j <= days; j++) {
-                System.out.println("  Day: " + j);
+                System.out.print("  Day: " + j);
             }
         }
     }

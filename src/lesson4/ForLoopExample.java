@@ -7,7 +7,7 @@ public class ForLoopExample {
     public static void main(String[] args) {
 
         for (int i = 10; i > 0; i--) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
 //        for (int i = 1; i < 100; i++) {
@@ -17,7 +17,7 @@ public class ForLoopExample {
 //        }
 
         //we want to validate the input from user and give him not more than 5 tries for correct input
-        /*Scanner scan = new Scanner(System.in);
+/*        Scanner scan = new Scanner(System.in);
         int time = 0;
 
         for (int counter = 0; counter < 5; counter++) {

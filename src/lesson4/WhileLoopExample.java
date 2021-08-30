@@ -6,7 +6,7 @@ public class WhileLoopExample {
 
     public static void main(String[] args) {
 
-        int i = 0;
+        /*int i = 0;
 
         while (i < 10) {
             System.out.println("*");
@@ -16,12 +16,12 @@ public class WhileLoopExample {
         int j = 10;
 
         while (j > 0) {
-            System.out.println(j);
+            System.out.print(j);
             j--;
-        }
+        }*/
 
         //do-while example
-        /*Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int number1, number2, choice;
 
         do {
@@ -39,6 +39,6 @@ public class WhileLoopExample {
 
             System.out.println();
 
-        } while(choice == 1);*/
+        } while(choice == 1);
     }
 }

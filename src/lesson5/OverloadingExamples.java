@@ -26,8 +26,8 @@ public class OverloadingExamples {
         return a + b;
     }
 
-//    public static float sumOfNumbers(int foo, float bar) {
-//        return foo + bar;
-//    }
+    public static float sumOfNumbers(float foo, int bar) {
+        return foo + bar;
+    }
 
 }

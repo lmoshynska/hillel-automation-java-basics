@@ -18,11 +18,11 @@ public class StringMethods {
 
         // split String example
         String splitExample = "this is an example of split";
-        String[] myStringArray = splitExample.split(" ");
+        String[] myStringArray = splitExample.split(",");
 
         System.out.println(Arrays.toString(myStringArray));
 
-        String s= "Hello World";
+        String s = "Hello World";
         // or String s= new String ("Hello world");
 
         // Returns the number of characters in the String.

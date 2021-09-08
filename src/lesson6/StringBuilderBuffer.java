@@ -4,6 +4,7 @@ public class StringBuilderBuffer {
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Hello ");
+
         sb.append("Java").append(" Lesson6"); //now original string is changed
         System.out.println(sb); //prints Hello Java Lesson6
 

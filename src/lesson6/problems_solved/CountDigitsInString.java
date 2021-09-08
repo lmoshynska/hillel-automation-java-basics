@@ -13,11 +13,11 @@ public class CountDigitsInString {
 
         // first way - loop through the String, use ASCII character representation to check if char is within the range for digits
         // ASCII range for digits 0-9 is: 48-57
-        for (int i = 0; i < str.length(); i++) {
+        /*for (int i = 0; i < str.length(); i++) {
             if(str.charAt(i) < 58 && str.charAt(i) > 47) {
                 digitsCount++;
             }
-        }
+        }*/
 
         // second way - loop through the String, apply method from Character class to define if the character is digit
         /*for (int i = 0; i < str.length(); i++) {
@@ -27,12 +27,12 @@ public class CountDigitsInString {
         }*/
 
         // third way - convert String into char array and loop through the array
-        /*char[] charsFromString = str.toCharArray();
+        char[] charsFromString = str.toCharArray();
         for(char ch : charsFromString) {
             if(Character.isDigit(ch)) {
                 digitsCount++;
             }
-        }*/
+        }
 
         return digitsCount;
     }

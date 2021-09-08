@@ -8,7 +8,8 @@ public class CharacterExamples {
         char value3 = ' ';
 
         // See if these characters are digits.
-        System.out.println(Character.isDigit(value1));
+        boolean isDigit = Character.isDigit(value1);
+        System.out.println(isDigit);
         System.out.println(Character.isDigit(value2));
         System.out.println(Character.isDigit(value3));
 

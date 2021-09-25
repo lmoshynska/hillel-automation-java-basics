@@ -2,19 +2,22 @@ package lesson9.InheritanceExample;
 
 public class Woman extends Human {
 
-    public Woman() {
-        System.out.println("I'm a woman");
-    }
+    String favColor;
 
     public Woman(String name) {
         super(name);
     }
 
-    public void talk() {
-        System.out.println("I'm talking too much");
+    public Woman(String name, String favColor) {
+        super(name);
+        this.favColor = favColor;
     }
-    public void walk() {
 
+    public void talk(String voice) {
+        System.out.println("I'm talking too much but my voice is very " + voice);
+    }
+
+    public void walk() {
         System.out.println("I'm walking graciously");
     }
 

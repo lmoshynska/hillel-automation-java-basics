@@ -4,16 +4,17 @@ public class Human {
     protected String name;
 
     public Human() {
-        System.out.println("Human was created");
+        System.out.println("A human has been created!");
     }
 
     public Human(String name) {
         this.name = name;
     }
 
-    public void talk() {
-        System.out.println("I'm talking");
+    public void talk(String voice) {
+        System.out.println("I'm talking in a " + voice + " voice");
     }
+
     public void walk() {
         System.out.println("I'm walking");
     }

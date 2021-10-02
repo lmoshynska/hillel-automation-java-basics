@@ -1,8 +1,11 @@
 package lesson11.WashingMachines;
 
+import java.util.Arrays;
+
 public class WashingMachinesMain {
 
     public static void main(String[] args) {
+
         WashingMachine low = new LowSegmentWashingMachine();
         WashingMachine mid = new MidSegmentWashingMachine();
         HighSegmentWashingMachine high = new HighSegmentWashingMachine();
@@ -19,8 +22,10 @@ public class WashingMachinesMain {
         mid.addWashingPowder(400);
         mid.wash(60, 50);
 
-        high.selectMode("Wool");
-        high.selectMode("Linen");
+        high.selectMode(Programs.WOOL);
+        high.selectMode(Programs.LINEN);
+        high.executeWashingCycle(200, Programs.DELICATE, true);
+        high.executeWashingCycle(100, Programs.REFRESH, false);
         high.dry(60);
 
         dryer.dry(50);

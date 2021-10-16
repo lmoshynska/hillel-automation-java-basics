@@ -3,17 +3,30 @@ package lesson14;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.*;
+import java.util.stream.Collectors;
 
-public class CollectionsOperations {
+public class Main {
 
     public static void main(String[] args) {
-        List<String> arrList1 = CollectionsStorage.getStrArrayList();
+        CollectionsStorage storage = new CollectionsStorage();
+        List<String> arrList1 = storage.getStrArrayList();
+
+        List<String > linkedList = storage.getLinkedList();
+
         System.out.println(arrList1);
+        System.out.println(linkedList);
+
+        Main mainObj = new Main();
+        System.out.println(mainObj.getDistinct(arrList1));
+        System.out.println(mainObj.getDistinct(linkedList));
+
+
+        /*System.out.println(arrList1);
 
         List<String> arrList2 = new ArrayList<>(arrList1);
         arrList2.add("Orange");
         System.out.println(arrList1);
-        System.out.println(arrList2);
+        System.out.println(arrList2);*/
 
         /*String[] someValues = {"One", "Two"};
         List<String> list3 = new ArrayList<>(Arrays.asList(someValues));
@@ -51,8 +64,8 @@ public class CollectionsOperations {
 //        System.out.println(arrList1.containsAll(arrList3));
 
 
-        List<String> linkedList1 = CollectionsStorage.getLinkedList();
-        System.out.println(linkedList1);
+        /*List<String> linkedList1 = CollectionsStorage.getLinkedList();
+        System.out.println(linkedList1);*/
 //        List<String> linkedList2 = new LinkedList<>(arrList3);
 //        System.out.println(linkedList1);
 
@@ -76,14 +89,20 @@ public class CollectionsOperations {
 //        System.out.println(deque);
 
 
-        Set<String> set = CollectionsStorage.getHashSet();
+        /*Set<String> set = CollectionsStorage.getHashSet();
         System.out.println(set);
         set.add("Athens");
         System.out.println(set);
         Set<String> set1 = new HashSet<>(linkedList1);
-        System.out.println(set1);
+        System.out.println(set1);*/
 
         //collections as set elements
         //adding duplicates
+    }
+
+    public List<String> getDistinct(List<String> initList) {
+        return initList.stream()
+                .distinct()
+                .collect(Collectors.toList());
     }
 }

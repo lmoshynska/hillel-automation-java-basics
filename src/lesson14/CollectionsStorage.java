@@ -5,14 +5,12 @@ import java.util.stream.Collectors;
 
 public class CollectionsStorage {
 
-    public static void main(String[] args) {
-
-    }
-
-    public static List<String> getStrArrayList() {
+    public List<String> getStrArrayList() {
         List<String> list = new ArrayList<>();
         list.add("Mango");
         list.add("Apple");
+        list.add("Banana");
+        list.add("Banana");
         list.add("Banana");
         list.add("Grapes");
 
@@ -27,8 +25,8 @@ public class CollectionsStorage {
         return list;
     }
 
-    public static List<String> getLinkedList() {
-        List<String> list = new LinkedList<String>();
+    public List<String> getLinkedList() {
+        List<String> list = new LinkedList<>();
         list.add("Kyiv");
         list.add("London");
         list.add("Rome");
